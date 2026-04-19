@@ -354,6 +354,9 @@
   .flex-row-reverse {
     flex-direction: row-reverse;
   }
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
   .items-center {
     align-items: center;
   }
@@ -362,6 +365,9 @@
   }
   .justify-between {
     justify-content: space-between;
+  }
+  .justify-center {
+    justify-content: center;
   }
   .justify-start {
     justify-content: flex-start;
@@ -1204,6 +1210,11 @@
       flex-direction: row;
     }
   }
+  .lg\:flex-wrap {
+    @media (width >= 64rem) {
+      flex-wrap: wrap;
+    }
+  }
   .lg\:items-center {
     @media (width >= 64rem) {
       align-items: center;
@@ -1229,9 +1240,19 @@
       gap: 5px;
     }
   }
+  .lg\:gap-\[10px\] {
+    @media (width >= 64rem) {
+      gap: 10px;
+    }
+  }
   .lg\:gap-\[16px\] {
     @media (width >= 64rem) {
       gap: 16px;
+    }
+  }
+  .lg\:gap-\[20px\] {
+    @media (width >= 64rem) {
+      gap: 20px;
     }
   }
   .lg\:gap-\[24px\] {
